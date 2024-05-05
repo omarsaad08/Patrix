@@ -1,0 +1,36 @@
+.testimonials
+  @include grad()
+  .main-heading
+    &::before
+      display: none
+    &::after
+      height: 2px
+      bottom: 10px
+      background-color: $purple-light
+    + p
+      width: fit-content
+  .carousel-item
+    .testimonials-card
+      background-color: #eee
+      padding: 2rem
+      border-radius: 1rem
+      svg
+        font-size: 1.5rem
+        color: $primary
+      .ratings
+        text-align: center
+    .testimonials-pic
+      width: 5rem
+      height: 5rem
+      border-radius: 50%
+      border: 0.3rem solid $primary
+      overflow: hidden
+      text-align: center
+      margin: -2.5rem auto 0
+    .testimonials-info
+      color: white
+      text-align: center
+  .btns
+    width: fit-content
+    margin-left: auto
+    margin-right: auto

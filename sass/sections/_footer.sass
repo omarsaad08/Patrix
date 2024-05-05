@@ -1,0 +1,68 @@
+footer
+  background-color: #151414
+  .row
+    padding-top: 2rem
+    padding-bottom: 2rem
+  .contact
+    > div
+      display: flex
+      gap: 1rem
+      svg
+        font-size: 3rem
+        color: $primary
+      a
+        text-decoration: none
+        color: white
+        font-weight: 600
+        font-size: 1.25rem
+        transition: 0.3s
+        &:hover
+          color: $primary
+      p
+        font-size: 1rem
+  .social-media
+    background-color: #212121
+    font-size: 1.25rem
+    svg
+      margin-left: 0.25rem
+      margin-right: 0.25rem
+      font-size: 1.5rem
+      @include media-breakpoint-down(sm)
+        margin-top: 1rem
+  .links
+    line-height: 2
+    @include media-breakpoint-down(sm)
+      text-align: center
+      h4
+        margin-right: auto
+        margin-left: auto
+    > div
+      margin-bottom: 1rem
+    h4
+      padding-bottom: 1rem
+      margin-bottom: 1.5rem
+      position: relative
+      width: fit-content
+      &::before
+        content: ''
+        position: absolute
+        width: 40%
+        height: 0.2rem
+        background-color: #212121
+        left: 0
+        bottom: 0
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+      li
+        padding: 0
+        transition: 0.3s
+        &:hover
+          color: $primary
+  .copyright
+    color: #6c757d
+    background-color: #000
+    a
+      color: #dee2e6
+      display: inline

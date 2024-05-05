@@ -1,0 +1,17 @@
+@mixin grad()
+  background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95))
+@mixin absoluteCenter()
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+@mixin textgrad()
+  display: block
+  text-transform: capitalize
+  font-weight: 600
+  font-family: "Poppins", sans-serif
+  display: inline-block
+  background-image: linear-gradient(to right, #9926f0, #d122e3)
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent

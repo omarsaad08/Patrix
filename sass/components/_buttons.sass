@@ -1,0 +1,27 @@
+.btn-rounded
+  // @include media-breakpoint-down(md)
+  // margin-top: 0.5rem
+  @include media-breakpoint-down(lg)
+    display: none
+  background-color: white
+  padding: 0.5rem
+  font-weight: bold
+  border: 2px solid $purple-light
+  display: flex
+  align-items: center
+  gap: 0.5rem
+  font-size: 14px
+  // transition: 0.1s background, 0.1s color
+  transition: 0.3s
+  svg
+    color: white
+    background-color: $primary
+    padding: 0.5rem
+    border-radius: 50%
+  &:hover
+    // @include grad()
+    background-color: $purple-light
+    color: white
+    // border: 1px solid white
+    svg
+      background-color: darken($primary, 30)

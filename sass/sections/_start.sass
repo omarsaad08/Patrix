@@ -1,0 +1,39 @@
+// #e9ecef
+.start
+  background-color: #e9ecef
+  margin: 0 !important
+  padding-top: 5rem
+  padding-bottom: 5rem
+  .row
+    > div
+      padding: 5rem 4rem
+    div:first-child
+      @include grad()
+      h3
+        font-size: 3rem
+      p
+        font-size: 1rem
+    div:last-child
+      form
+        h3
+          @include textgrad()
+          margin-bottom: 2rem
+        input, textarea, button
+          resize: none
+          border: 2px solid #ccc
+          outline: none
+          border-radius: 0.25rem
+          padding: 0.5rem
+          display: block
+          width: 100%
+          margin-bottom: 1.5rem
+        textarea
+          min-height: 10rem
+        button
+          border: none
+        .text
+          display: flex
+          justify-content: space-between
+          gap: 0.5rem
+          input
+            flex-grow: 1

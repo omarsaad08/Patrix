@@ -1,0 +1,20 @@
+.services
+  padding: 4rem 0
+  .row
+    margin-bottom: 2rem
+    text-align: center
+    svg
+      margin: 1rem auto
+    img
+      @include media-breakpoint-down(sm)
+        display: none
+    &:first-of-type
+      div:first-child
+        border-right: 0.1rem solid #dee2e6
+        display: flex
+        justify-content: center
+        align-items: center
+      div:last-child
+        border-left: 0.1rem solid #dee2e6
+        padding: 2rem
+    

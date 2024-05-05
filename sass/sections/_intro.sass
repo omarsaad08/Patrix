@@ -1,0 +1,40 @@
+.intro
+  @include grad()
+  min-height: 60vh
+  padding-top: 5rem
+  .row div:first-child
+    h1
+      font-size: 5rem
+    p
+      text-transform: capitalize
+      font-size: 2.5rem
+    @include media-breakpoint-down(lg)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+      h1
+        font-size: 3rem
+      p
+        font-size: 1.5rem
+  .video-box
+    width: fit-content
+    span.circle
+      @include absoluteCenter()
+      font-size: 5rem
+      color: $secondary
+    span.border-animation
+      @include absoluteCenter()
+      width: 6rem
+      height: 6rem
+      border: 0.5rem solid rgba(255, 255, 255, 0.5)
+      border-radius: 50%
+      animation: pulse-border 2s linear infinite 
+      // animation-direction: alternate
+      &.two
+        // animation: pulse-border 1s linear infinite 
+        animation-delay: 1s
+      &.three
+        // animation: pulse-border 1s linear infinite
+        animation-delay: 2s
